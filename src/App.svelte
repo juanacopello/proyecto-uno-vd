@@ -3,7 +3,7 @@
   /* Importamos d3 para tenerlo disponible */
   import * as d3 from "d3"
 
-  let data = [1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+  let data = [1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6000]
 
   let altura = d3
     .scaleLinear()
