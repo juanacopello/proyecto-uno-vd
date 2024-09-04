@@ -13,33 +13,14 @@
   let colorLightness = d3
     .scaleLinear()
     .domain([0, d3.max(data)])
-    .range(["white", "#EE0001"])
+    .range(["#eecc77", "#270D0B"])
 </script>
 
-<!-- Estructura contenido HTML -->
-<h2>Ejemplo 1: Altura</h2>
-<div class="container">
-  <!-- <div class="item_wrapper">
-    <p class="num">1000</p>
-    <div class="column"></div> 
-    </div>-->
-  {#each data as num}
-    <div class="item_wrapper">
-      <p class="num">{num}</p>
-      <div class="column" style="height: {altura(num)}px"></div>
-    </div>
-  {/each}
-  <!-- </div> -->
-</div>
-<br />
-<br />
-
-<h2>Ejemplo 2: Color</h2>
+<h2>Las galletitas que cociné ayer</h2>
 <div class="container_2">
   {#each data as num}
     <div class="item_wrapper">
       <div class="circle" style="background-color: {colorLightness(num)}"></div>
-      <p class="num_2">{num}</p>
     </div>
   {/each}
 </div>
@@ -53,7 +34,7 @@
     justify-content: space-between;
     gap: 10px;
     height: 450px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
   }
   .container_2 {
     height: auto;
@@ -71,21 +52,26 @@
     height: 100%;
     background-color: #ee0001;
   }
+
+  h2{
+    text-align: center;
+  }
   .num {
     font-size: 21px;
     font-weight: bold;
     margin: 0;
-    color: #ee0001;
+    color: black;
   }
   .num_2 {
     font-size: 18px;
     margin: 0;
-    color: #ee0001;
+    color: black;
   }
   .circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #ee0001;
+    border: 1px solid black;
   }
 </style>
