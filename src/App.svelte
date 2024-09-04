@@ -24,6 +24,7 @@
     </div>
   {/each}
 </div>
+<p class="aclaracion">(Algunas se quemaron)</p>
 
 <!-- Estilos CSS -->
 <style>
@@ -38,6 +39,11 @@
   }
   .container_2 {
     height: auto;
+  }
+
+  .aclaracion{
+    text-align: center;
+    margin-top: 20px;
   }
 
   .item_wrapper {
