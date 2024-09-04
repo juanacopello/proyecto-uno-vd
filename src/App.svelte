@@ -24,7 +24,7 @@
     </div>
   {/each}
 </div>
-<p class="aclaracion">(Algunas se quemaron)</p>
+<p class="aclaracion">(Estas se quemaron)</p>
 
 <!-- Estilos CSS -->
 <style>
@@ -42,7 +42,7 @@
   }
 
   .aclaracion{
-    text-align: center;
+    text-align: right;
     margin-top: 20px;
   }
 
